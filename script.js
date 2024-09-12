@@ -9,11 +9,10 @@ function calculateTax(income, expenses) {
 
 
 
+
 function sendNotification(email) {
-  for (char of email) {
-    if (char.indexOf() !== "@") {
+    if (email.indexOf('@') === -1) {
       return "Invalid Email";
-    }
   }
   let userName = email.split("@")[0];
   let domainName = email.split("@")[1];
@@ -36,6 +35,7 @@ function checkDigitsInName(name) {
 
 
 
+
 function calculateFinalScore(obj) {
   if (typeof obj !== "object") {
     return "Invalid Input";
@@ -50,6 +50,8 @@ function calculateFinalScore(obj) {
     return false;
   }
   }
+
+
 
 
   function  waitingTime(waitingTimes  , serialNumber) {
